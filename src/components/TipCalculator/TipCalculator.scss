@@ -1,0 +1,72 @@
+@import "../../../styles/variable.scss";
+.tip-calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    background-color: $white;
+    .left-container {
+        .bill-container {
+            .bill-title{
+
+            }
+            .bill-container{
+                .dollar-icon{
+
+                }
+                .bill-count{
+
+                }
+            }
+        }
+        .select-tip-container{
+            .select-tip-title{
+
+            }
+            .select-tip-box-container{
+                .select-tip-box{
+
+                }
+            }
+        }
+        .number-of-people-container{
+            .number-of-people-title{
+
+            }
+            .number-of-people-input-container{
+                .person-icon{
+
+                }
+                .number-of-people-count{
+
+                }
+            }
+        }
+    }
+    .right-container {
+        .tip-amount-container{
+            .tip-amount{
+                .tip-person{
+
+                }
+            }
+            .tip-count{
+
+            }
+        }
+        .total-container{
+            .total{
+                .total-person{
+
+                }
+            }
+            .total-count{
+
+            }
+        }
+        .reset-button{
+            
+        }
+    }
+}

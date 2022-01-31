@@ -1,0 +1,12 @@
+@import "../../../styles/variable.scss";
+.topic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .topic {
+        letter-spacing: 10px;
+        color: $very-dark-cyan;
+        line-height: 40px;
+    }
+}
