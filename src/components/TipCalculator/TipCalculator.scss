@@ -7,69 +7,112 @@
     height: auto;
     background-color: $white;
     border-radius: 10px;
+    padding: 20px 10px;
+    font-size: 12px;
     .left-container {
+        width: 50%;
+        margin-right: 2.5%;
+        height: 250px;
         .bill-container {
-            .bill-title{
-
+            padding-bottom: 20px;
+            .bill-title {
+                color: $very-dark-cyan;
+                padding-bottom: 10px;
             }
-            .bill-container{
-                .dollar-icon{
-
+            .bill-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $light-grayish-cyan;
+                height: auto;
+                padding: 5px 10px;
+                border-radius: 3px;
+                .dollar-icon {
+                    width: 12px;
+                    height: auto;
                 }
-                .bill-count{
-
+                .bill-count {
+                    font-size: 18px;
+                    color: $dark-grayish-cyan2;
                 }
             }
         }
-        .select-tip-container{
-            .select-tip-title{
-
+        .select-tip-container {
+            padding-bottom: 20px;
+            .select-tip-title {
+                color: $very-dark-cyan;
+                padding-bottom: 10px;
             }
-            .select-tip-box-container{
-                .select-tip-box{
-
+            .select-tip-box-container {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                .select-tip-box {
+                    width: 70px;
+                    height: 30px;
+                    background-color: $very-dark-cyan;
+                    color: $white;
+                    font-size: 16px;
+                    border-radius: 3px;
+                    margin: 5px;
                 }
             }
         }
-        .number-of-people-container{
-            .number-of-people-title{
-
+        .number-of-people-container {
+            .number-of-people-title {
+                color: $very-dark-cyan;
+                padding-bottom: 10px;
             }
-            .number-of-people-input-container{
-                .person-icon{
-
+            .number-of-people-input-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $light-grayish-cyan;
+                height: auto;
+                padding: 5px 10px;
+                border-radius: 3px;
+                .person-icon {
+                    width: 12px;
+                    height: auto;
                 }
-                .number-of-people-count{
-
+                .number-of-people-count {
+                    font-size: 18px;
+                    color: $dark-grayish-cyan2;
                 }
             }
         }
     }
     .right-container {
         background-color: $very-dark-cyan;
-        border-radius:10px ;
-        .tip-amount-container{
-            .tip-amount{
-                .tip-person{
-
+        border-radius: 10px;
+        width: 50%;
+        margin-left: 2.5%;
+        height: 250px;
+        .tip-amount-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+            .tip-amount {
+                color: $white;
+                font-size: 12px;
+                .tip-person {
+                    color: $dark-grayish-cyan2;
                 }
             }
-            .tip-count{
-
+            .tip-count {
+                color: $strong-cyan;
+                font-size: 28px;
             }
         }
-        .total-container{
-            .total{
-                .total-person{
-
+        .total-container {
+            .total {
+                .total-person {
                 }
             }
-            .total-count{
-
+            .total-count {
             }
         }
-        .reset-button{
-            
+        .reset-button {
         }
     }
 }
