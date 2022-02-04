@@ -13,7 +13,8 @@ function TipCalculator() {
                             src="./images/icon-dollar.svg"
                             alt="dollar"
                         ></img>
-                        <div className="bill-count">0</div>
+
+                        <input type="number" value="0" className="bill-count" />
                     </div>
                 </div>
                 <div className="select-tip-container">
@@ -37,7 +38,11 @@ function TipCalculator() {
                             src="./images/icon-person.svg"
                             alt="person"
                         ></img>
-                        <div className="number-of-people-count">0</div>
+                        <input
+                            type="number"
+                            value="0"
+                            className="number-of-people-count"
+                        />
                     </div>
                 </div>
             </div>
