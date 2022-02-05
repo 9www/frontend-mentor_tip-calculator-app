@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TipCalculator.scss";
-
+import { useEffect } from "react";
 function TipCalculator() {
+    const [tipPercentage, setTipPercentage] = useState(0);
+
     return (
         <div className="tip-calculator-container">
             <div className="left-container">
@@ -18,14 +20,48 @@ function TipCalculator() {
                     </div>
                 </div>
                 <div className="select-tip-container">
-                    <div className="select-tip-title">Select Tip %</div>
+                    <div className="select-tip-title">
+                        Select Tip %{tipPercentage}
+                    </div>
                     <div className="select-tip-box-container">
-                        <button className="select-tip-box">5%</button>
-                        <button className="select-tip-box">10%</button>
-                        <button className="select-tip-box">15%</button>
-                        <button className="select-tip-box">25%</button>
-                        <button className="select-tip-box">50%</button>
-                        <button className="select-tip-box">Custom</button>
+                        <button
+                            className="select-tip-box"
+                            onClick={() => setTipPercentage(5)}
+                        >
+                            5%
+                        </button>
+                        <button
+                            className="select-tip-box"
+                            onClick={() => setTipPercentage(10)}
+                        >
+                            10%
+                        </button>
+                        <button
+                            className="select-tip-box"
+                            onClick={() => setTipPercentage(15)}
+                        >
+                            15%
+                        </button>
+                        <button
+                            className="select-tip-box"
+                            onClick={() => setTipPercentage(25)}
+                        >
+                            25%
+                        </button>
+                        <button
+                            className="select-tip-box"
+                            onClick={() => setTipPercentage(50)}
+                        >
+                            50%
+                        </button>
+                        <input
+                            className="select-tip-box"
+                            placeholder="Custom"
+                            type="number"
+                            onChange={(e) => setTipPercentage(e.target.value)}
+                            min={0}
+                            max={100}
+                        ></input>
                     </div>
                 </div>
                 <div className="number-of-people-container">
