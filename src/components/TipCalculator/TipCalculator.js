@@ -57,10 +57,11 @@ function TipCalculator() {
                         <input
                             className="select-tip-box"
                             placeholder="Custom"
-                            type="number"
-                            onChange={(e) => setTipPercentage(e.target.value)}
+                            onInput={(e) => setTipPercentage(e.target.value)}
                             min={0}
-                            max={100}
+                            max={1000}
+                            pattern="[0-9]{4}"
+                            value={tipPercentage}
                         ></input>
                     </div>
                 </div>
